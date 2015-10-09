@@ -23,7 +23,7 @@ func speedLine(mw *imagick.MagickWand, aw *imagick.MagickWand) error {
 	cw.SetColor(*color)
 	dw.SetFillColor(cw)
 
-	center := []float64{float64(cols) / 2.0, float64(rows) / 2.0}
+	center := []float64{float64(rows) / 2.0, float64(cols) / 2.0}
 	const radiusCenter float64 = 0.75
 	const step float64 = 0.02
 	const bold float64 = 1.0
